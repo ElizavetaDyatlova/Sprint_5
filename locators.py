@@ -5,13 +5,13 @@ class TestLocators:
     """Локаторы для автотестов Stellar Burgers."""
 
     #Регистрация
-    INPUT_NAME = (By.XPATH, "//fieldset[1]//input")
+    INPUT_NAME = (By.XPATH, "//label[text()='Имя']/following-sibling::input")
     #Поле Имя в форме регистрации
 
-    INPUT_EMAIL_REG = (By.XPATH, "//fieldset[2]//input")
+    INPUT_EMAIL_REG = (By.XPATH, "//label[text()='Email']/following-sibling::input")
     #Поле Email в форме регистрации
 
-    INPUT_PASSWORD_REG = (By.XPATH, "//fieldset[3]//input")
+    INPUT_PASSWORD_REG = (By.XPATH, "//input[@type='password']")
     #Поле Пароль в форме регистрации
 
     BUTTON_REGISTER_SUBMIT = (By.XPATH, "//button[text()='Зарегистрироваться']")
@@ -24,10 +24,10 @@ class TestLocators:
     BUTTON_LOGIN_ACCOUNT = (By.XPATH, "//button[text()='Войти в аккаунт']")
     #Кнопка Войти в аккаунт на главной
 
-    INPUT_EMAIL_AUTH = (By.XPATH, "//fieldset[1]//input")
+    INPUT_EMAIL_AUTH = (By.XPATH, "//label[text()='Email']/following-sibling::input")
     #Поле Email в форме авторизации
 
-    INPUT_PASSWORD_AUTH = (By.XPATH, "//fieldset[2]//input")
+    INPUT_PASSWORD_AUTH = (By.XPATH, "//input[@type='password']")
     #Поле Пароль в форме авторизации
 
     BUTTON_LOGIN = (By.XPATH, "//button[text()='Войти']")
